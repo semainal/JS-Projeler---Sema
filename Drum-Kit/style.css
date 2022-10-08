@@ -2,7 +2,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-    background-color: aliceblue;
+    background-color: purple;
 
 }
 
@@ -35,7 +35,7 @@
   }
   
   .key {
-    border: 3px solid black;
+    border: 3px solid yellow;
     border-radius: .5rem;
     margin: 5px;
     font-size: 10px;
@@ -44,7 +44,7 @@
     width: 5rem;
     text-align: center;
     color: white;
-    background: rgba(0,0,0,0.4);
+    background: yellow(0,0,0,0.4);
     text-shadow: 0 0 .5rem black;
   }
 
@@ -66,3 +66,10 @@
     color: blueviolet;
   }
   
+  h5 {
+    color:#ffc600
+  }
+
+  .sound {
+    color:yellow;
+  }
