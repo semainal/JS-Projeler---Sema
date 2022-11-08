@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planets</title>
+    <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+    <style>
+
+        html {
+            box-sizing: border-box;
+            background: #ffc600;
+            font-family: 'helvetica neue';
+            font-size: 30px;
+            font-weight: 200;
+          }
+          
+          body {
+            margin: 0;
+          }
+          
+          *, *:before, *:after {
+            box-sizing: inherit;
+          }
+      
+          h1 {
+            text-align: center;
+          }
+          .panels {
+            min-height: 100vh;
+            overflow: hidden;
+            display: flex;
+          }
+
+          .container-panels {
+        
+           margin: 10px;
+          }
+      
+          .panel {
+            background: #6B0F9C;
+            box-shadow: inset 0 0 0 5px rgba(255,255,255,0.1);
+            color: white;
+            text-align: center;
+            align-items: center;
+            /* Safari transitionend event.propertyName === flex */
+            /* Chrome + FF transitionend event.propertyName === flex-grow */
+            transition:
+              font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+              flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+              background 0.2s;
+            font-size: 20px;
+            background-size: cover;
+            background-position: center;
+            flex: 1;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+        
+          }
+
+        .panel1 {
+            background-image: url("images/1.jpg");
+        }
+        .panel2 {
+            background-image: url("images/2.jpg");
+        }
+        .panel3 {
+            background-image: url("images/3.jpg");
+        }
+        .panel4 {
+            background-image: url("images/4.jpg");
+        }
+        .panel5 {
+            background-image: url("images/5.jpg");
+        }
+        .panel6 {
+            background-image: url("images/6.jpg");
+        }
+        .panel7 {
+            background-image: url("images/7.jpg");
+        }
+        .panel8 {
+            background-image: url("images/8.jpg");
+        }
+        .panel9 {
+            background-image: url("images/9.jpg");
+        }
+        .panel10 {
+            background-image: url("images/10.jpg");
+        }
+
+         /* Flex Items */
+    .panel > * {
+        margin: 0;
+        width: 100%;
+        transition: transform 0.5s;
+        flex: 1 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+  
+      .panel > *:first-child { transform: translateY(-100%); }
+      .panel.open-active > *:first-child { transform: translateY(0); }
+      .panel > *:last-child { transform: translateY(100%); }
+      .panel.open-active > *:last-child { transform: translateY(0); }
+  
+      .panel p {
+        text-transform: uppercase;
+        font-family: 'Amatic SC', cursive;
+        text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+        font-size: 2em;
+      }
+      
+      .panel p:nth-child(2) {
+        font-size: 4em;
+      }
+  
+      .panel.open {
+        flex: 5;
+        font-size: 1,5em;
+      
+      }
+
+      
+      
+      @media only screen and (max-width: 600px) {
+        .panel p {
+          font-size: 1em;
+        }
+      }
+    </style>
+
+    <div class="container-title">
+        <h1>PLANETS</h1>
+    </div>
+
+    <div class="container-panels">
+    <div class="panels">
+        <div class="panel panel1">
+            <p>MOON</p>
+            <p>*</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, dolorem?</p>
+            </div>
+
+    <div class="panels">
+        <div class="panel panel2">
+            <p>SUN</p>
+            <p>A</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, eveniet.</p>
+            </div>
+
+    <div class="panels">
+        <div class="panel panel3">
+            <p>MERKUR</p>
+            <p>S</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, cumque?</p>
+            </div>
+
+    <div class="panels">
+        <div class="panel panel4">
+            <p>VENUS</p>
+            <p>T</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem, veniam.</p>
+            </div>
+
+    <div class="panels">
+        <div class="panel panel5">
+            <p>MARS</p>
+            <p>R</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, eius.</p>
+            </div>
+
+    <div class="panels">
+        <div class="panel panel6">
+            <p>JUPITER</p>
+            <p>O</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, dicta?</p>
+            </div>
+    
+    <div class="panels">
+        <div class="panel panel7">
+            <p>SATURN</p>
+            <p>L</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, minima.</p>
+            </div>
+
+    <div class="panels">
+        <div class="panel panel8">
+            <p>URANUS</p>
+            <p>O</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, veniam.</p>
+            </div>
+
+    <div class="panels">
+        <div class="panel panel9">
+            <p>NEPTUN</p>
+            <p>G</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, vitae.</p>
+            </div>
+
+    <div class="panels">
+        <div class="panel panel10">
+            <p>PLUTON</p>
+            <p>Y</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, id.</p>
+            </div>
+
+        </div>
+
+    <script>
+        const panels = document.querySelectorAll(".panel");
+
+        function toggleOpen() {
+            console.log(`${panels}`);
+            this.classList.toggle("open");
+        }
+
+        function toggleActive(e) {
+            console.log(e.propertyName);
+            if(e.propertyName.includes("flex")) {
+                this.classList.toggle("open-active");
+            }
+        }
+
+        panels.forEach(panel => panel.addEventListener("click", toggleOpen));
+
+        panels.forEach(panel => panel.addEventListener("transitionend", toggleActive));
+    </script>   
+</body>
+
+</html>
